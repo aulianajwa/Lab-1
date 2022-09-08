@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'example_app',
+    'wishlist',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
