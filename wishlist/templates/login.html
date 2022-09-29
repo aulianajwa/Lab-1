@@ -5,14 +5,25 @@
 {% endblock meta %}
 
 {% block content %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
 
-<div class = "login">
+<div class = "login" style="text-align : center">
 
-    <h1>Login</h1>
+    <h1 style="font-family :'Times New Roman', Times, serif", class="text-center">Login</h1>
 
     <form method="POST" action="">
         {% csrf_token %}
-        <table>
+        <table style="margin-left : auto; margin-right : auto">
             <tr>
                 <td>Username: </td>
                 <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
@@ -25,7 +36,7 @@
 
             <tr>
                 <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
+                <td><input class="btn login_btn" type="submit" value="Login" style="background-color :#CCCCFF"></td>
             </tr>
         </table>
     </form>
