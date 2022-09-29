@@ -33,14 +33,10 @@
                 <td>Password: </td>
                 <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
             </tr>
-
-            <tr>
-                <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login" style="background-color :#CCCCFF"></td>
-            </tr>
         </table>
+        <input class="btn login_btn" type="submit" value="Login" style="background-color :#CCCCFF">
     </form>
-
+    
     {% if messages %}
         <ul>
             {% for message in messages %}
